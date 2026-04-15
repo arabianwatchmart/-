@@ -1196,16 +1196,14 @@ a{text-decoration:none;color:inherit}
   <div class="hero-inner">
     <div class="hero-eyebrow"><span class="pulse-dot"></span> Arabia's Finest Watch Platform</div>
     <h1 class="hero-title serif">Premium Timepieces<br>in <em>INDIA</em></h1>
-    <p class="hero-sub">Buy. Sell. Trade. — No Brokerage. No Hidden Charges.</p>
+    <p class="hero-sub">Buy Premium Watches At Arabian Watch Mart.</p>
 
     <!-- Property type tabs -->
     <div class="prop-tabs" id="propTabs">
       <button class="prop-tab active" data-type="all" onclick="selectPropTab(this)">
         <div class="prop-tab-icon"><i class="fa-solid fa-clock"></i></div><span>Luxury<br>Watches</span>
       </button>
-      <button class="prop-tab" data-type="commercial" onclick="selectPropTab(this)">
-        <div class="prop-tab-icon"><i class="fa-solid fa-clock"></i></div><span>Vintage<br>Watches</span>
-      </button>
+
       <button class="prop-tab" data-type="construction" onclick="selectPropTab(this)">
         <div class="prop-tab-icon"><i class="fa-solid fa-gem"></i></div><span>Limited<br>Editions</span>
       </button>
@@ -1223,7 +1221,7 @@ a{text-decoration:none;color:inherit}
           <i class="fa-solid fa-chevron-down" style="font-size:.65rem"></i>
           <div class="city-dropdown" id="cityDropdown">
             <div class="city-option" onclick="selectCity(event,'Luxury')">Mumbai</div>
-            <div class="city-option" onclick="selectCity(event,'Vintage')">Pune</div>
+
             <div class="city-option" onclick="selectCity(event,'Thane')">Patek Philippe</div>
             <div class="city-option" onclick="selectCity(event,'Omega')">Rolex</div>
             <div class="city-option" onclick="selectCity(event,'Limited Edition')">Limited Edition</div>
@@ -1427,15 +1425,12 @@ a{text-decoration:none;color:inherit}
     <img id="dImg" src="" alt="Property"/>
     <div class="d-hero-badge" id="dBadge">RERA Verified</div>
     <div class="d-hero-rating"><i class="fa-solid fa-star"></i> <span id="dRating">4.8</span> Rating</div>
-    <div class="d-photos-count" onclick="showNotif('Gallery opening...','info')"><i class="fa-solid fa-images"></i> <span id="dPhotos">24</span> Photos</div>
+    <div class="d-photos-count" onclick="showNotif('Gallery opening...','info')"><i class="fa-solid fa-images"></i> <span id="dPhotos"></span> Photos</div>
   </div>
 
-  <div class="media-tabs">
-    <div class="m-tab active" onclick="selectMediaTab(this,'Video')"><i class="fa-solid fa-play"></i><span>Video</span></div>
-    <div class="m-tab" onclick="selectMediaTab(this,'Street')"><i class="fa-solid fa-street-view"></i><span>Street</span></div>
-    <div class="m-tab" onclick="selectMediaTab(this,'Floor Plans')"><i class="fa-solid fa-ruler-combined"></i><span>Floor Plans</span></div>
-    <div class="m-tab" onclick="selectMediaTab(this,'Amenities')"><i class="fa-solid fa-swimmer"></i><span>Amenities</span></div>
-    <div class="m-tab" onclick="selectMediaTab(this,'Gallery')"><i class="fa-solid fa-camera"></i><span>Gallery</span></div>
+    <div class="media-tabs">
+    
+
   </div>
 
   <div class="d-body" id="dBody">
@@ -1621,22 +1616,12 @@ const EMAILJS_PUBLIC_KEY  = 'YOUR_PUBLIC_KEY';   // e.g. 'AbCdEfGhIjKlMnOp'
 // DATA
 // ============================================================
 let ALL_PROPS = [
-  { id:0, name:'Rolex Submariner Date',  loc:'Ref. 126610LN, 41mm',   price:'$12,500 – $14,200', priceNum:3.2, bhk:'Cal. 3235, Automatic', area:'Oystersteel, Black Ceramic Bezel', img:'https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=600&q=80', badge:'Pre-Order',    badgeClass:'',        rating:4.8, status:'Pre-Order',           section:['launches','all'], source:'static' },
-  { id:1, name:'Patek Philippe Nautilus 5711',     loc:'Ref. 5711/1A-010, 40mm',          price:'$35,000 – $45,000', priceNum:1.8, bhk:'Cal. 26-330, Manual', area:'Stainless Steel, Blue Dial',   img:'https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=600&q=80', badge:'Certified', badgeClass:'',        rating:4.6, status:'In Stock',        section:['launches','recent','all'], source:'static' },
-  { id:2, name:'Audemars Piguet Royal Oak',     loc:'Ref. 15500ST, 41mm',           price:'$28,000 – $40,000',  priceNum:9.5, bhk:'Cal. 3120, Automatic',    area:'Stainless Steel, Blue Dial', img:'https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=600&q=80', badge:'Luxury',        badgeClass:'badge-purple', rating:4.9, status:'In Stock',     section:['launches','topSelling','all'], source:'static' },
-  { id:3, name:'Omega Seamaster 300M',       loc:'Omega',            price:'$4,500 – $6,000',   priceNum:0.75,bhk:'Cal. 8800, Co-Axial',    area:'Stainless Steel, Black Dial',     img:'https://images.unsplash.com/photo-1594534475808-b18fc33b045e?w=600&q=80', badge:'Best Value',    badgeClass:'',        rating:4.3, status:'On Order',   section:['recent','all'], source:'static' },
-  { id:4, name:'Cartier Santos de Cartier',      loc:'Cartier',             price:'$3,800 – $5,200', priceNum:1.2, bhk:'Cal. 26-330, Manual', area:'Stainless Steel, White Dial',   img:'https://images.unsplash.com/photo-1548171915-e79a380a2a4b?w=600&q=80', badge:'New Arrival',    badgeClass:'badge-green', rating:4.5, status:'New Arrival',        section:['launches','recent','all'], source:'static' },
-  { id:5, name:'IWC Portugieser Chronograph',         loc:'Ref. IW371605, 41mm',   price:'$8,000 – $12,000', priceNum:2.4, bhk:'Cal. 26-330, Manual', area:'Stainless Steel, Silver Dial', img:'https://images.unsplash.com/photo-1548234972-9e9052dc0781?w=600&q=80', badge:'Certified', badgeClass:'',        rating:4.7, status:'In Stock',        section:['recent','topSelling','all'], source:'static' },
-  { id:6, name:'Hublot Big Bang Unico',      loc:'Ref. 441.CI.1171.RX, 42mm',    price:'$16,000 – $22,000',priceNum:1.05,bhk:'Cal. 8800, Co-Axial',    area:'Titanium, Black Carbon',   img:'https://images.unsplash.com/photo-1569396116180-210c182bedb8?w=600&q=80', badge:'Arabian',      badgeClass:'',        rating:4.4, status:'On Order',   section:['recent','all'], source:'static' },
-  { id:7, name:'Tudor Black Bay 41',           loc:'Ref. M79230B-0001, 41mm',    price:'$3,200 – $4,800',priceNum:0.85,bhk:'Cal. MT5402, Automatic', area:'Stainless Steel, Black Dial',    img:'https://images.unsplash.com/photo-1622434641406-a158123450f9?w=600&q=80', badge:'Certified', badgeClass:'',        rating:4.9, status:'In Stock',        section:['topSelling','all'], source:'static' },
-  { id:8, name:'Jaeger-LeCoultre Reverso',      loc:'Ref. Q2438522, 45.6mm',          price:'$9,000 – $15,000',priceNum:1.09,bhk:'Cal. 822/2, Manual',       area:'18K Rose Gold, Silver Dial',   img:'https://images.unsplash.com/photo-1680280793398-4f6a20cb6e98?w=600&q=80', badge:'Premium',       badgeClass:'',        rating:4.7, status:'In Stock',        section:['topSelling','all'], source:'static' },
-  { id:9, name:'Breitling Navitimer B01',          loc:'Ref. AB012721.BB01, 43mm',      price:'$7,500 – $11,000',   priceNum:0.95,bhk:'Cal. 26-330, Manual', area:'Stainless Steel, Black Dial',   img:'https://images.unsplash.com/photo-1633114128814-62ef7b53e7c8?w=600&q=80', badge:'New Arrival',    badgeClass:'badge-green', rating:4.6, status:'On Order', section:['topSelling','all'], source:'static' },
+
 ];
 
 const BRANDS_DATA = [
   { name:'Rolex',       rating:5.0, projects:48, img:'https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=300&q=80' },
-  { name:'Patek Philippe', rating:4.8, projects:32, img:'https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=300&q=80' },
-  { name:'Audemars Piguet',     rating:4.9, projects:19, img:'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=300&q=80' },
+
   { name:'Richard Mille',       rating:4.6, projects:27, img:'https://images.unsplash.com/photo-1594534475808-b18fc33b045e?w=300&q=80' },
   { name:'Patek Philippe', rating:4.7, projects:22, img:'https://images.unsplash.com/photo-1548171915-e79a380a2a4b?w=300&q=80' },
 ];
@@ -1660,7 +1645,7 @@ const FOOTER_SECTIONS = [
   { title:'Watch Categories',         links:['Dress Watches','Sports Watches','Dive Watches','Chronographs','Tourbillons','Complications'] },
   { title:'Limited Editions', links:['Rolex Daytona','Patek Nautilus','AP Royal Oak','RM 11-03','Cartier Santos'] },
   { title:'New Arrivals',        links:['New Rolex','New Patek','New AP','New RM','New Cartier'] },
-  { title:'Shop By Collection',          links:['Luxury','Vintage','Sports','Dress','Limited Edition','Pre-Owned','New Arrival','Accessories'] },
+
 ];
 
 // ============================================================
@@ -2220,18 +2205,7 @@ function openDetail(id) {
       </div>
     </div>
 
-    <div class="emi-wrap">
-      <div class="emi-title"><i class="fa-solid fa-calculator"></i> Price Estimator</div>
-      <div class="emi-label">Watch Price <span id="emiLoanVal">₹1.5 Cr</span></div>
-      <input class="emi-slider" type="range" min="50" max="1000" value="150" id="emiLoan" oninput="calcEMI()"/>
-      <div class="emi-label">Import Duty <span id="emiRateVal">8.5%</span></div>
-      <input class="emi-slider" type="range" min="60" max="150" value="85" id="emiRate" oninput="calcEMI()"/>
-      <div class="emi-label">Authentication Fee <span id="emiTenureVal">20 Years</span></div>
-      <input class="emi-slider" type="range" min="5" max="30" value="20" id="emiTenure" oninput="calcEMI()"/>
-      <div class="emi-result">
-        <div class="emi-result-label">Estimated Total Cost</div>
-        <div class="emi-result-val" id="emiResult">₹1,30,450</div>
-        <div class="emi-result-sub">*Prices vary by condition</div>
+  
       </div>
     </div>`;
 
@@ -2430,7 +2404,7 @@ function selectPropTab(el) {
   document.querySelectorAll('.prop-tab').forEach(t=>t.classList.remove('active'));
   el.classList.add('active');
   const type = el.dataset.type;
-  const labels={all:'Luxury Watches', commercial:'Vintage Watches', construction:'On Order', plot:'Accessories'};
+  const labels={all:'Luxury Watches', commercial:'Vintage Watches', construction:'rolex', plot:'patek philippe'};
   if(type==='all') return;
   showNotif(`Loading ${labels[type]}...`,'info');
   quickSearch(labels[type]);
@@ -2538,7 +2512,7 @@ function openProfileModal() { document.getElementById('profileModal').classList.
           <input class="adm-inp-plain" id="apName" placeholder="e.g. Rolex Submariner Date"/>
         </div>
         <div class="adm-form-grp">
-          <div class="adm-form-lbl"><i class="fa-solid fa-location-dot"></i> Location <span class="req">*</span></div>
+          <div class="adm-form-lbl"><i class="fa-solid fa-location-dot"></i> Offer <span class="req">*</span></div>
           <input class="adm-inp-plain" id="apLoc" placeholder="e.g. Ref. 126610LN, 41mm"/>
         </div>
       </div>
@@ -2549,14 +2523,14 @@ function openProfileModal() { document.getElementById('profileModal').classList.
           <input class="adm-inp-plain" id="apPrice" placeholder="e.g. ₹2.5 Cr – ₹4.2 Cr"/>
         </div>
         <div class="adm-form-grp">
-          <div class="adm-form-lbl"><i class="fa-solid fa-bed"></i> BHK Config <span class="req">*</span></div>
+          <div class="adm-form-lbl"><i class="fa-solid fa-bed"></i> Coating <span class="req">*</span></div>
           <input class="adm-inp-plain" id="apBhk" placeholder="e.g. Cal. 3235, Automatic"/>
         </div>
       </div>
 
       <div class="adm-form-row">
         <div class="adm-form-grp">
-          <div class="adm-form-lbl"><i class="fa-solid fa-expand"></i> Area</div>
+          <div class="adm-form-lbl"><i class="fa-solid fa-expand"></i> Size</div>
           <input class="adm-inp-plain" id="apArea" placeholder="e.g. Oystersteel, Ceramic"/>
         </div>
         <div class="adm-form-grp">
@@ -2595,7 +2569,6 @@ function openProfileModal() { document.getElementById('profileModal').classList.
           <div class="adm-form-lbl"><i class="fa-solid fa-home"></i> Watch Category</div>
           <select class="adm-select" id="apType">
             <option value="Apartment">Luxury</option>
-            <option value="Villa">Vintage</option>
             <option value="Plot">Sports</option>
             <option value="Studio">Dress</option>
             <option value="Commercial">Limited Edition</option>
