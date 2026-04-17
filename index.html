@@ -1194,40 +1194,35 @@ a{text-decoration:none;color:inherit}
 <section class="hero">
   <div class="hero-grid-bg"></div>
   <div class="hero-inner">
-    <div class="hero-eyebrow"><span class="pulse-dot"></span> Arabia's Finest Watch Platform</div>
+    <div class="hero-eyebrow"><span class="pulse-dot"></span> INDIA'S Finest Watch Platform</div>
     <h1 class="hero-title serif">Premium Timepieces<br>in <em>INDIA</em></h1>
-    <p class="hero-sub">Buy Premium Watches At Arabian Watch Mart.</p>
+    <p class="hero-sub"> Buy high-quality watches at Arabian Watch Mart.</p>
 
     <!-- Property type tabs -->
     <div class="prop-tabs" id="propTabs">
-      <button class="prop-tab active" data-type="all" onclick="selectPropTab(this)">
-        <div class="prop-tab-icon"><i class="fa-solid fa-clock"></i></div><span>Luxury<br>Watches</span>
+  <button class="prop-tab" data-type="commercial" onclick="quickSearch('Rolex')">
+    <div class="prop-tab-icon"><i class="fa-solid fa-clock"></i></div><span>Rolex<br>Watches</span>
+  </button>
+      <button class="prop-tab" data-type="commercial" onclick="quickSearch('Patek Philippe')">
+        <div class="prop-tab-icon"><i class="fa-solid fa-clock"></i></div><span>Patek<br>Philippe</span>
       </button>
+    
 
-      <button class="prop-tab" data-type="construction" onclick="selectPropTab(this)">
-        <div class="prop-tab-icon"><i class="fa-solid fa-gem"></i></div><span>Limited<br>Editions</span>
-      </button>
-      <button class="prop-tab" data-type="plot" onclick="selectPropTab(this)">
-        <div class="prop-tab-icon"><i class="fa-solid fa-wrench"></i></div><span>Watch<br>Accessories</span>
-      </button>
     </div>
 
     <!-- Search box -->
     <div class="search-box">
       <div class="search-row1">
         <div class="city-btn" id="cityBtn" onclick="toggleCityDropdown()">
-          <i class="fa-solid fa-location-dot"></i>
-          <span id="cityLabel">Mumbai</span>
+          <i class="fa-solid fa-clock"></i>
+          <span id="cityLabel">options</span>
           <i class="fa-solid fa-chevron-down" style="font-size:.65rem"></i>
+          
           <div class="city-dropdown" id="cityDropdown">
-            <div class="city-option" onclick="selectCity(event,'Luxury')">Mumbai</div>
+            <div class="city-option" onclick="selectCity(event,'rolex')">Rolex</div>
+            <div class="city-option" onclick="selectCity(event,'Patek Philippe')">Patek Philippe</div>
 
-            <div class="city-option" onclick="selectCity(event,'Thane')">Patek Philippe</div>
-            <div class="city-option" onclick="selectCity(event,'Omega')">Rolex</div>
-            <div class="city-option" onclick="selectCity(event,'Limited Edition')">Limited Edition</div>
-            <div class="city-option" onclick="selectCity(event,'Sports')">Bangalore</div>
-            <div class="city-option" onclick="selectCity(event,'Dress')">Hyderabad</div>
-            <div class="city-option" onclick="selectCity(event,'Pre-Owned')">Chennai</div>
+    
           </div>
         </div>
         <div class="search-input-wrap">
@@ -1238,24 +1233,7 @@ a{text-decoration:none;color:inherit}
         </div>
       </div>
       <div class="search-filters">
-        <select class="filter-select" id="filterBHK">
-          <option value="">Category</option>
-          <option value="1">Rolex</option>
-          <option value="2">Patek Philippe</option>
-          <option value="3">Audemars Piguet</option>
-          <option value="4">Richard Mille</option>
-        </select>
-        <select class="filter-select" id="filterBudget">
-          <option value="">Price Range</option>
-          <option value="under50">Under $5K</option>
-          <option value="50to1cr">$5K - $20K</option>
-          <option value="1to3cr">$20K - $50K</option>
-          <option value="3to5cr">$50K - $100K</option>
-          <option value="above5cr">Above $100K</option>
-        </select>
-        <button class="search-go-btn" onclick="runSearch()">
-          <i class="fa-solid fa-magnifying-glass"></i> Search
-        </button>
+
       </div>
     </div>
 
@@ -1263,19 +1241,15 @@ a{text-decoration:none;color:inherit}
     <div class="loc-chips">
       <div class="loc-chip" onclick="quickSearch('Rolex')"><i class="fa-solid fa-clock"></i>Rolex</div>
       <div class="loc-chip" onclick="quickSearch('Patek Philippe')"><i class="fa-solid fa-clock"></i>Patek Philippe</div>
-      <div class="loc-chip" onclick="quickSearch('Audemars Piguet')"><i class="fa-solid fa-clock"></i>Audemars Piguet</div>
-      <div class="loc-chip" onclick="quickSearch('Richard Mille')"><i class="fa-solid fa-clock"></i>Richard Mille</div>
-      <div class="loc-chip" onclick="quickSearch('Cartier')"><i class="fa-solid fa-clock"></i>Cartier</div>
-      <div class="loc-chip" onclick="quickSearch('Omega')"><i class="fa-solid fa-clock"></i>Omega</div>
+
     </div>
   </div>
 </section>
 
 <!-- ======== STATS STRIP ======== -->
 <div class="stats-strip">
-  <div class="stat-cell"><div class="stat-num">50K+</div><div class="stat-lbl">Watches</div></div>
-  <div class="stat-cell"><div class="stat-num">200+</div><div class="stat-lbl">Brands</div></div>
-  <div class="stat-cell"><div class="stat-num">$500M+</div><div class="stat-lbl">Deals Done</div></div>
+  <div class="stat-cell"><div class="stat-num">A+</div><div class="stat-lbl">Brands</div></div>
+  <div class="stat-cell"><div class="stat-num">ISO</div><div class="stat-lbl">Verified</div></div>
   <div class="stat-cell"><div class="stat-num">98%</div><div class="stat-lbl">Satisfied</div></div>
   <div class="stat-cell"><div class="stat-num">0%</div><div class="stat-lbl">Commission</div></div>
 </div>
@@ -1300,7 +1274,7 @@ a{text-decoration:none;color:inherit}
   <div class="discount-banner-tag"><i class="fa-solid fa-tag"></i> This Week's Special</div>
   <div class="discount-banner-title">Discover Handpicked<br>Discounted Watches</div>
   <div class="discount-banner-sub">Curated deals on authenticated luxury timepieces — verified, certified, best prices.</div>
-  <button class="discount-banner-btn" onclick="quickSearch('discounted')">
+  <button class="discount-banner-btn" onclick="quickSearch('A')">
     <i class="fa-solid fa-percent"></i> Explore Deals
   </button>
 </div>
@@ -1336,7 +1310,7 @@ a{text-decoration:none;color:inherit}
     <div class="section-tag"><i class="fa-solid fa-award"></i> Top Brands</div>
     <div class="section-row">
       <h2 class="section-title serif">Top <em>Brands</em></h2>
-      <button class="view-all" onclick="showNotif('Viewing all brands...','info')"><i class="fa-solid fa-arrow-right"></i> View All</button>
+      <button class="view-all" "><i class="-right"></i> More Upcoming</button>
     </div>
     <div class="section-sub">Most sought-after watch brands</div>
   </div>
@@ -1371,15 +1345,9 @@ a{text-decoration:none;color:inherit}
   <div class="footer-about">
     We at <strong>Arabian Watch Mart</strong> assist watch enthusiasts in acquiring their dream timepiece, act on behalf of our clients, and ensure you receive the best deal in the market. We are recognised as the <strong>"Leading Watch Dealers in Arabia"</strong> for several consecutive years — with <strong>0% commission</strong> and complete end-to-end support.
   </div>
-  <div class="footer-socials">
-    <a class="footer-social" href="https://facebook.com" target="_blank" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-    <a class="footer-social" href="https://instagram.com" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
-    <a class="footer-social" href="https://linkedin.com" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-    <a class="footer-social" href="https://twitter.com" target="_blank" title="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
-    <a class="footer-social" href="https://youtube.com" target="_blank" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
-  </div>
+
   <div class="footer-copy">
-    &copy; 2025 Arabian Watch Mart Pvt. Ltd. All Rights Reserved.
+    &copy; 2026 Arabian Watch Mart Pvt. Ltd. All Rights Reserved.
     <div class="footer-badges">
       <span class="footer-badge">AUTHENTICATED</span>
       <span class="footer-badge">ISO 27001</span>
@@ -1428,10 +1396,7 @@ a{text-decoration:none;color:inherit}
     <div class="d-photos-count" onclick="showNotif('Gallery opening...','info')"><i class="fa-solid fa-images"></i> <span id="dPhotos"></span> Photos</div>
   </div>
 
-    <div class="media-tabs">
-    
 
-  </div>
 
   <div class="d-body" id="dBody">
     <!-- Fully populated by openDetail() -->
@@ -1439,7 +1404,7 @@ a{text-decoration:none;color:inherit}
 
   <div class="detail-cta visible">
     <button class="d-cta-btn quote" onclick="toggleDetailWish()"><i class="fa-solid fa-heart"></i> Wishlist</button>
-    <a class="d-cta-btn visit" href="https://wa.link/apxpf5" target="_blank"><i class="fa-brands fa-whatsapp"></i> Contact Us</a>
+    <a class="d-cta-btn visit" href="https://wa.link/meoez3" target="_blank"><i class="fa-brands fa-whatsapp"></i> Contact Us</a>
   </div>
 </div>
 
@@ -1622,30 +1587,29 @@ let ALL_PROPS = [
 const BRANDS_DATA = [
   { name:'Rolex',       rating:5.0, projects:48, img:'https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=300&q=80' },
 
-  { name:'Richard Mille',       rating:4.6, projects:27, img:'https://images.unsplash.com/photo-1594534475808-b18fc33b045e?w=300&q=80' },
   { name:'Patek Philippe', rating:4.7, projects:22, img:'https://images.unsplash.com/photo-1548171915-e79a380a2a4b?w=300&q=80' },
 ];
 
 const TESTI_DATA = [
-  { name:'Kaushik Datta', role:'IT Professional', rating:4.5, img:'https://randomuser.me/api/portraits/men/41.jpg', text:'Arabian Watch Mart understood our needs and helped us find the perfect timepiece in a short span. With their support, we made the right purchase decision at the right time.' },
+  { name:'Kaushik Datta', role:'IT Professional', rating:4.5, img:'https://randomuser.me/api/portraits/men/12.jpg', text:'Arabian Watch Mart understood our needs and helped us find the perfect timepiece in a short span. With their support, we made the right purchase decision at the right time.' },
   { name:'Sunita Desai',  role:'Business Owner',   rating:5,   img:'https://randomuser.me/api/portraits/women/35.jpg', text:'Found our dream watch within days! Authenticated listings gave us complete confidence. Truly a premium experience from the first call to final delivery.' },
-  { name:'Rohit Nair',    role:'NRI Investor',     rating:5,   img:'https://randomuser.me/api/portraits/men/62.jpg', text:'As an NRI buyer I was nervous, but Arabian Watch Mart handled everything end-to-end. The detailed photos and authentication were absolutely seamless.' },
+  { name:'Rohit Nair',    role:'NRI Investor',     rating:5,   img:'https://randomuser.me/api/portraits/men/71.jpg', text:'As an NRI buyer I was nervous, but Arabian Watch Mart handled everything end-to-end. The detailed photos and authentication were absolutely seamless.' },
   { name:'Meera Joshi',   role:'Teacher',          rating:4.5, img:'https://randomuser.me/api/portraits/women/22.jpg', text:'The 0% commission promise is real! They saved us ₹4 lakhs. Team was helpful throughout and helped us negotiate the best deal with the seller.' },
 ];
 
 const ARTICLES_DATA = [
   { region:'Omega', author:'Shruti Bagwe', title:'How Will The Navi Mumbai Metro Route Impact Real Estate Prices?', img:'https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=400&q=80' },
-  { region:'Luxury',      author:'Ravi Mehta',   title:'Stamp Duty Charges in Maharashtra — What Buyers Must Know in 2025', img:'https://images.unsplash.com/photo-1553545985-1e0d8781d5db?w=400&q=80' },
+  { region:'Luxury',      author:'Ravi Mehta',   title:'Stamp Duty Charges in Maharashtra — What Buyers Must Know in 2026', img:'https://images.unsplash.com/photo-1553545985-1e0d8781d5db?w=400&q=80' },
   { region:'Thane',       author:'Priya Rao',    title:'Top 5 Reasons Thane Is Mumbai\'s Fastest Growing Real Estate Hub', img:'https://images.unsplash.com/photo-1486325212027-8081e485255e?w=400&q=80' },
   { region:'Luxury',      author:'Ankit Shah',   title:'RERA 2024: New Rules Every Property Buyer Must Know', img:'https://images.unsplash.com/photo-1548171915-e79a380a2a4b?w=400&q=80' },
 ];
 
 const FOOTER_SECTIONS = [
-  { title:'Popular Watch Brands', links:['Rolex','Patek Philippe','Audemars Piguet','Richard Mille','Cartier','Omega','IWC','Hublot','Vacheron Constantin','Breguet'] },
-  { title:'Watch Categories',         links:['Dress Watches','Sports Watches','Dive Watches','Chronographs','Tourbillons','Complications'] },
-  { title:'Limited Editions', links:['Rolex Daytona','Patek Nautilus','AP Royal Oak','RM 11-03','Cartier Santos'] },
-  { title:'New Arrivals',        links:['New Rolex','New Patek','New AP','New RM','New Cartier'] },
-
+  { title:'Popular Watch Brands', links:['Rolex','Patek Philippe'] },
+  ,
+  { title:'Limited Editions', links:['Diamond rolex'] },
+  { title:'New Arrivals',        links:['Patek Classic'] },
+  
 ];
 
 // ============================================================
@@ -1720,12 +1684,12 @@ function renderBrands() {
   const el = document.getElementById('brandsScroll');
   if(!el) return;
   el.innerHTML = BRANDS_DATA.map(b=>`
-    <div class="builder-card" onclick="showNotif('Viewing ${b.name} collection...','info')">
+    <div class="builder-card" ">
       <div class="builder-img"><img src="${b.img}" alt="${b.name}" loading="lazy"/></div>
       <div class="builder-body">
         <div class="builder-name">${b.name}</div>
         <div class="builder-stars">${stars(b.rating)}<span class="builder-rating-text">${b.rating}</span></div>
-        <div class="builder-projects"><i class="fa-solid fa-building"></i> ${b.projects} Models Available</div>
+        <div class="builder-projects"><i class="fa-solid fa-building"></i> Premium Models Available</div>
       </div>
     </div>`).join('');
 }
@@ -1754,7 +1718,7 @@ function renderArticles() {
   const el = document.getElementById('articlesScroll');
   if(!el) return;
   el.innerHTML = ARTICLES_DATA.map(a=>`
-    <div class="article-card" onclick="showNotif('Opening article...','info')">
+    <div class="article-card" ">
       <div class="article-img">
         <img src="${a.img}" alt="${a.title}" loading="lazy"/>
         <div class="article-region">${a.region}</div>
@@ -1961,7 +1925,7 @@ function addToCompareFromDetail() {
 // ============================================================
 function runSearch() {
   const q    = document.getElementById('heroSearchInput').value.trim();
-  const bhk  = document.getElementById('filterBHK').value;
+  const brand = document.getElementById('filterBHK').value;
   const bud  = document.getElementById('filterBudget').value;
   let results = [...ALL_PROPS];
 
@@ -1970,14 +1934,16 @@ function runSearch() {
     p.loc.toLowerCase().includes(q.toLowerCase()) ||
     p.bhk.includes(q)
   );
-  if(bhk) results = results.filter(p=>p.bhk.includes(bhk));
+  if(brand) results = results.filter(p=>
+    p.name.toLowerCase().includes(brand.toLowerCase())
+  );
   if(bud) {
-    const ranges = {under50:[0,0.5],'50to1cr':[0.5,1],'1to3cr':[1,3],'3to5cr':[3,5],above5cr:[5,999]};
-    const [lo,hi] = ranges[bud]||[0,999];
+    const ranges = {under50:[0,5000],'50to1cr':[5000,20000],'1to3cr':[20000,50000],'3to5cr':[50000,100000],above5cr:[100000,9999999]};
+    const [lo,hi] = ranges[bud]||[0,9999999];
     results = results.filter(p=>p.priceNum>=lo && p.priceNum<hi);
   }
 
-  openSearchResults(q||'All Properties', results);
+  openSearchResults(q || (brand ? brand : 'All Watches'), results);
 }
 
 function quickSearch(term) {
@@ -2017,7 +1983,7 @@ function closeSearchOverlay() {
 }
 
 function renderSearchFilterBar() {
-  const statuses = ['All','In Stock','New Arrival','On Order','Pre-Order'];
+  const statuses = ['All'];
   document.getElementById('searchFilterBar').innerHTML = statuses.map((s,i)=>`
     <div class="s-filter-chip ${i===0?'active':''}" onclick="filterByStatus(this,'${s}')">${s}</div>`).join('');
 }
@@ -2205,7 +2171,7 @@ function openDetail(id) {
       </div>
     </div>
 
-  
+
       </div>
     </div>`;
 
@@ -2404,7 +2370,7 @@ function selectPropTab(el) {
   document.querySelectorAll('.prop-tab').forEach(t=>t.classList.remove('active'));
   el.classList.add('active');
   const type = el.dataset.type;
-  const labels={all:'Luxury Watches', commercial:'Vintage Watches', construction:'rolex', plot:'patek philippe'};
+  const labels={all:'Luxury Watches', commercial:'Vintage Watches', construction:'On Order', plot:'Accessories'};
   if(type==='all') return;
   showNotif(`Loading ${labels[type]}...`,'info');
   quickSearch(labels[type]);
@@ -2508,11 +2474,11 @@ function openProfileModal() { document.getElementById('profileModal').classList.
 
       <div class="adm-form-row">
         <div class="adm-form-grp">
-          <div class="adm-form-lbl"><i class="fa-solid fa-building"></i> Watch Name <span class="req">*</span></div>
+          <div class="adm-form-lbl"><i class="fa-solid fa-building"></i> Property Name <span class="req">*</span></div>
           <input class="adm-inp-plain" id="apName" placeholder="e.g. Rolex Submariner Date"/>
         </div>
         <div class="adm-form-grp">
-          <div class="adm-form-lbl"><i class="fa-solid fa-location-dot"></i> Offer <span class="req">*</span></div>
+          <div class="adm-form-lbl"><i class="fa-solid fa-location-dot"></i> Location <span class="req">*</span></div>
           <input class="adm-inp-plain" id="apLoc" placeholder="e.g. Ref. 126610LN, 41mm"/>
         </div>
       </div>
@@ -2523,14 +2489,14 @@ function openProfileModal() { document.getElementById('profileModal').classList.
           <input class="adm-inp-plain" id="apPrice" placeholder="e.g. ₹2.5 Cr – ₹4.2 Cr"/>
         </div>
         <div class="adm-form-grp">
-          <div class="adm-form-lbl"><i class="fa-solid fa-bed"></i> Coating <span class="req">*</span></div>
+          <div class="adm-form-lbl"><i class="fa-solid fa-bed"></i> BHK Config <span class="req">*</span></div>
           <input class="adm-inp-plain" id="apBhk" placeholder="e.g. Cal. 3235, Automatic"/>
         </div>
       </div>
 
       <div class="adm-form-row">
         <div class="adm-form-grp">
-          <div class="adm-form-lbl"><i class="fa-solid fa-expand"></i> Size</div>
+          <div class="adm-form-lbl"><i class="fa-solid fa-expand"></i> Area</div>
           <input class="adm-inp-plain" id="apArea" placeholder="e.g. Oystersteel, Ceramic"/>
         </div>
         <div class="adm-form-grp">
@@ -2569,6 +2535,7 @@ function openProfileModal() { document.getElementById('profileModal').classList.
           <div class="adm-form-lbl"><i class="fa-solid fa-home"></i> Watch Category</div>
           <select class="adm-select" id="apType">
             <option value="Apartment">Luxury</option>
+            <option value="Villa">Vintage</option>
             <option value="Plot">Sports</option>
             <option value="Studio">Dress</option>
             <option value="Commercial">Limited Edition</option>
@@ -2794,12 +2761,17 @@ function showAdmDashboard() {
   loadFbProps();
   renderAdmList(); updateAdmStats();
 }
+// ---- Edit tracking ----
+let _editingDocId = null;
+
 function showAdmAddForm() {
+  _editingDocId = null;
   document.getElementById('admLogin').style.display   = 'none';
   document.getElementById('admDash').style.display    = 'none';
   document.getElementById('admAddForm').style.display = 'block';
-  document.getElementById('admTitle').textContent     = 'Add Property';
+  document.getElementById('admTitle').textContent     = 'Add Watch';
   document.getElementById('admSub').textContent       = 'Publishes live to all visitors';
+  document.getElementById('admSubmitBtn').innerHTML   = '<i class="fa-brands fa-google"></i> Save to Firebase &amp; Publish Live';
   document.getElementById('admFormErr').classList.remove('show');
   ['apName','apLoc','apPrice','apBhk','apArea','apDesc','apHighlights','apAmenities','apNearby'].forEach(id => {
     const el = document.getElementById(id); if (el) el.value = '';
@@ -2878,9 +2850,12 @@ function renderAdmList() {
           ${p.source==='firebase'?'Firebase · Live':'Built-in'}
         </span>
       </div>
-      ${p.source==='firebase'
-        ? `<button class="adm-del-btn" onclick="deleteAdmProp('${p.id}')" title="Delete"><i class="fa-solid fa-trash"></i></button>`
+      <div style="display:flex;flex-direction:column;gap:5px;flex-shrink:0">
+        ${p.source==='firebase' ? `
+          <button class="adm-del-btn" onclick="editAdmProp('${p.id}')" title="Edit" style="background:rgba(201,168,76,.1);border-color:rgba(201,168,76,.3);color:var(--gold)"><i class="fa-solid fa-pen"></i></button>
+          <button class="adm-del-btn" onclick="deleteAdmProp('${p.id}')" title="Delete"><i class="fa-solid fa-trash"></i></button>`
         : `<div class="adm-lock-btn" title="Built-in"><i class="fa-solid fa-lock"></i></div>`}
+      </div>
     </div>`).join('');
 }
 
@@ -2906,7 +2881,7 @@ function handleImgUpload(input) {
   reader.readAsDataURL(file);
 }
 
-// ---- Submit new property via REST API ----
+// ---- Submit new watch OR update existing ----
 async function submitAdmProperty() {
   const name   = document.getElementById('apName').value.trim();
   const loc    = document.getElementById('apLoc').value.trim();
@@ -2941,7 +2916,7 @@ async function submitAdmProperty() {
   const priceNum   = parseFloat(price.replace(/[^0-9.]/g,'')) || 0;
 
   try {
-    await fsWrite({
+    const data = {
       name, loc, price, priceNum, bhk,
       area:       area || 'On request',
       img, badge, badgeClass, status, rating, desc,
@@ -2949,10 +2924,20 @@ async function submitAdmProperty() {
       section:    ['launches', 'recent', 'topSelling', 'all'],
       source:     'firebase',
       createdAt:  new Date().toISOString()
-    });
+    };
+    if (_editingDocId) {
+      // Update existing
+      const db = getDB();
+      await db.collection('properties').doc(_editingDocId).set(data);
+      showNotif(`"${name}" updated! ✅`, 'success');
+      _editingDocId = null;
+    } else {
+      // Add new
+      await fsWrite(data);
+      showNotif(`"${name}" is now live! 🎉`, 'success');
+    }
     btn.disabled = false;
     btn.innerHTML = '<i class="fa-brands fa-google"></i> Save to Firebase &amp; Publish Live';
-    showNotif(`"${name}" is now live! 🎉`, 'success');
     await loadFbProps();
     renderSection('launchesScroll',   'launches');
     renderSection('recentScroll',     'recent');
@@ -2969,15 +2954,43 @@ async function submitAdmProperty() {
 
 // ---- Delete property via REST API ----
 async function deleteAdmProp(docId) {
-  if (!confirm('Delete this property? This cannot be undone.')) return;
+  if (!confirm('Delete this watch? This cannot be undone.')) return;
   try {
     await fsDelete(docId);
-    showNotif('Property deleted', 'info');
+    showNotif('Watch deleted', 'info');
     await loadFbProps();
     renderAdmList(); updateAdmStats();
   } catch(e) {
     showNotif('Delete failed: ' + e.message, 'error');
   }
+}
+
+// ---- Edit Firebase watch ----
+function editAdmProp(docId) {
+  const p = ALL_PROPS.find(x => String(x.id) === String(docId));
+  if (!p) return;
+  _editingDocId = docId;
+  showAdmAddForm();
+  // Prefill fields
+  document.getElementById('apName').value      = p.name      || '';
+  document.getElementById('apLoc').value       = p.loc       || '';
+  document.getElementById('apPrice').value     = p.price     || '';
+  document.getElementById('apBhk').value       = p.bhk       || '';
+  document.getElementById('apArea').value      = p.area      || '';
+  document.getElementById('apRating').value    = p.rating    || 4.5;
+  document.getElementById('apDesc').value      = p.desc      || '';
+  document.getElementById('apHighlights').value= p.highlights|| '';
+  document.getElementById('apAmenities').value = p.amenities || '';
+  document.getElementById('apNearby').value    = p.nearby    || '';
+  document.getElementById('apImg').value       = p.img       || '';
+  // Show image preview
+  if (p.img) {
+    document.getElementById('admImgPreview').src = p.img;
+    document.getElementById('admImgPreviewWrap').style.display = 'block';
+  }
+  // Update title and button
+  document.getElementById('admTitle').textContent = 'Edit Watch';
+  document.getElementById('admSubmitBtn').innerHTML = '<i class="fa-brands fa-google"></i> Update on Firebase';
 }
 </script>
 </body>
